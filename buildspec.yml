@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo 'this is installation steps'
+      - echo 'do your provisionings here'
+  pre_build:
+    commands:
+      - echo 'here your build commads goes'
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
