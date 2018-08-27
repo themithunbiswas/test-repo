@@ -1,12 +1,19 @@
 version: 0.2
 
 phases:
-  install:
+  update_system:
     commands:
       - sudo apt-get update
+  install_nodejs:
+    commands:
       - sudo apt-get install -y nodejs
+  install_npm:
+    commands:
       - sudo apt-get install -y npm
-  pre_build:
+  check_versions:
+    commands:
+      - node -v && npm -v
+  remove_surplus_files:
     commands:
       - rm -rf .git README.md
   build:
