@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo 'this is installation steps'
+      - sudo apt-get -y install npm
   pre_build:
     commands:
       - rm -rf .git README.md
