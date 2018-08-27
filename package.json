@@ -1,3 +1,23 @@
+{
+  "name": "Sample-App",
+  "version": "1.0.0",
+  "description": "This is a sample node js Hello_World application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themithunbiswas/test-repo.git"
+  },
+  "author": "Mithun Biswas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/themithunbiswas/test-repo/issues"
+  },
+  "homepage": "https://github.com/themithunbiswas/test-repo#readme",
   "dependencies": {
-    "express": "4.16.3"
+    "express": "^4.16.3",
+    "http": "0.0.0"
   }
+}
