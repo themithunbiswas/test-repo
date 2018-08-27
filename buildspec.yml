@@ -3,7 +3,9 @@ version: 0.2
 phases:
   install:
     commands:
-      - sudo apt-get -y install npm
+      - sudo apt-get update
+      - sudo apt-get install -y nodejs
+      - sudo apt-get install -y npm
   pre_build:
     commands:
       - rm -rf .git README.md
