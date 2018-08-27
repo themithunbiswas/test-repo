@@ -1,2 +1,2 @@
 #!/bin/bash
-forever start /var/www/html/index.js
+sudo forever start /var/www/html/index.js

@@ -1,2 +1,2 @@
 #!/bin/bash
-forever stop /var/www/html/index.js
+sudo forever stop /var/www/html/index.js
