@@ -1,6 +1,16 @@
-const express = require('express')
-const app = express()
 
-app.get('/', (req, res) => res.send('Hello World! \n This is a sample NodeJS application.'))
+// Dependencies
+const http = require('http');
+const express = require('express');
 
-app.listen(80, () => console.log('Example app listening on port 80!'))
+const app = express();
+app.use((req, res) => {
+        res.send('Hello there !');
+});
+
+// Starting both http server
+const httpServer = http.createServer(app);
+
+httpServer.listen(80, () => {
+        console.log('HTTP Server running on port 80');
+});
