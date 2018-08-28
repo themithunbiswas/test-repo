@@ -5,7 +5,7 @@ const express = require('express');
 
 const app = express();
 app.use((req, res) => {
-        res.send('Hello DevOps !');
+        res.send('Hello DevOps Team !');
 });
 
 // Starting both http server
