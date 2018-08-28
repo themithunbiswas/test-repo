@@ -11,6 +11,6 @@ app.use((req, res) => {
 // Starting both http server
 const httpServer = http.createServer(app);
 
-httpServer.listen(80, () => {
-        console.log('HTTP Server running on port 80');
+httpServer.listen(3001, () => {
+        console.log('HTTP Server running on port 3001');
 });
